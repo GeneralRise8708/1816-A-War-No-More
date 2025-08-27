@@ -1,0 +1,285 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 30,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "1816 A War No More",
+            "summary": "<p>After DeWitt Clinton defeated President James Madison in 1812, Clinton was left with the responsibility of ending the War of 1812. As an anti war candidate, Clinton hoped to get a peace deal done with Great Britain. On August 8th, 1813, his dream came true, and the War of 1812 was over. However, former Secretary of State James Monroe opposed Clinton's peace deal and decided to run for president.</p>\n<p>Dewitt Clinton must keep everyone on board with his achievements of ending the war and preserving the union.</p> \n<p>James Monroe must campaign that the peace deal made the U.S look weak and bring back the policies of Jefferson.</p>",
+            "image_url": "https://i.imgur.com/WAfa1Vm.png",
+            "winning_electoral_vote_number": 111,
+            "advisor_url": "https://i.imgur.com/wbyKwsq.png",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "1816 A War No More"
+    }
+]
+
+campaignTrail_temp.credits = "General_Rise8708, Listman for map, themccain for CYOA and Banner made by E!"
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 131,
+        "fields": {
+            "first_name": "DeWitt",
+            "last_name": "Clinton",
+            "election": 20,
+            "party": "Democratic-Republican",
+            "state": "New York",
+            "priority": 1,
+            "description": "<p>Current President of the United States, Dewitt Clinton, ended the War of 1812 on August 8th, 1813, when he visited Great Britain and was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool. This has faced backlash everywhere in the U.S. besides New England. However, he has become more approved with voters after the U.S. became stronger for the first time since before the Embargo Acts of 1807. This is because the U.S. has reopened trade ports with Great Britain.</p>\n<p>Now, in 1816, Clinton is faced with the tasks of expanding into the Northwest Territories, keeping Great Britain on their good side, and keeping voters pleased with his Presidency.  ",
+            "color_hex": "#d66f43",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/1UnB1Si.png",
+            "electoral_victory_message": "<p>Well, Mr. Clinton, you did it! Since you won re-election, you can now make sure you keep a good relationship with Great Britain. Let's hope you will keep voters pleased during your second term. Good luck, Mr. Clinton.</p>",
+            "electoral_loss_message": "<p>Mr. Clinton, despite you having a successful first term, it wasn't enough for voters. James Monroe won to become the Sixth President of the United States. As for you? Your legacy will definitely be one for the history books. You stopped the War of 1812 with a peace deal and a solid relationship with Great Britain. Word has it that James Monroe will cut trade with Great Britain once again. If that happens, then everything you worked for will be for nothing. But then again, it all might be a hoax. But you might be able to give it another shot at the presidency in 1820 or run to become a senator or governor of your home state of New York, or you may retire. Whatever you choose, I wish you the best, Mr. Clinton.</p> ",
+            "no_electoral_majority_message": "<p>How did this happen? This is impossible? Well, unfortunately for you and Monroe, the House and Senate are controlled by the Democratic-Republicans, so it will be complicated to tell who will get elected. But will it be you? Only time will tell. Good luck, Mr. Clinton!",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 437,
+        "fields": {
+            "first_name": "Jared",
+            "last_name": "Ingersoll",
+            "election": 20,
+            "party": "Federalist",
+            "state": "Pennsylvania ",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#d66f43",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/Cz1Ud6e.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Jared Ingersoll Jr has been vice president since 1813. He previously served as Attorney General of Pennsylvania. Before that, he was a Founding Father and served in the Continental Congress and the Philadelphia Convention. He is a very popular figure and is approved as Vice President by voters. So keeping him on the ticket is a good idea.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 132,
+        "fields": {
+            "first_name": "James",
+            "last_name": "Monroe",
+            "election": 20,
+            "party": "Democratic Republican",
+            "state": "Virginia",
+            "priority": 1,
+            "description": "<p>Not Playable</p>",
+            "color_hex": "#0cb800",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/lTV3ev1.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 438,
+        "fields": {
+            "first_name": "John",
+            "last_name": "E. Howard",
+            "election": 20,
+            "party": "Federalist",
+            "state": "Maryland",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#d66f43",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/6P5FO3S.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>James E. Howard is a former Governor and Senator from Maryland. He famously served only 7 days as President pro tempore of the U.S. Senate from November 21st, 1800, to November 27th, 1800. Howard will help in the state of Maryland, which you won by a hair in 1812. However, some voters prefer you keep Ingersoll instead of dropping him from the ticket. </p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 439,
+        "fields": {
+            "first_name": "Bill",
+            "last_name": "Clinton",
+            "election": 20,
+            "party": "N/A",
+            "state": "N/A",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#d66f43",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/YxZbQV9.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Wait what?! You picked Bill Clinton?!?!! Really?!?!?! Bill Clinton is literally -130 years old! Well, there is no coming back from this. Well, anyways, Bill Clinton is not even an embryo, so I don't know how he will campaign for you. You do know his grandparents are not even alive, right? So, yeah, it looks like you are going to lose. So want to go get some tea or something?</p> ",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 440,
+        "fields": {
+            "first_name": "Daniel",
+            "last_name": "D. Tompkins",
+            "election": 20,
+            "party": "Democratic-Republican",
+            "state": "New York",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0cb800",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Not Playable</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 127089,
+        "fields": {
+            "candidate": 131,
+            "running_mate": 437
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 117469,
+        "fields": {
+            "candidate": 131,
+            "running_mate": 438
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 156560,
+        "fields": {
+            "candidate": 131,
+            "running_mate": 439
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 176882,
+        "fields": {
+            "candidate": 132,
+            "running_mate": 440
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            131,
+            132
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            131,
+            132
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#8d6520",
+    "windowColor": "#004f80",
+    "containerColor": "#0085c7",
+    "innerWindowColor": "#856800",
+    "bannerImageUrl": "https://i.imgur.com/71dGYmI.png",
+    "backgroundImageUrl": "https://i.imgur.com/hFxTLt5.png",
+    "endingTextColor": "#000000",
+    "customQuote": "\"Pleasure is a shadow, wealth is vanity, and power a pageant; but knowledge is ecstatic in enjoyment, perennial in frame, unlimited in space and indefinite in duration.\" - DeWitt Clinton",
+    "gameTitle": "A War No More"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>A War No More</h2><font id="wittyquote" size="4" color="white"><em>"Pleasure is a shadow, wealth is vanity, and power a pageant; but knowledge is ecstatic in enjoyment, perennial in frame, unlimited in space and indefinite in duration." - DeWitt Clinton</em></font>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#8d6520";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#004f80";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#0085c7";
+
+document.getElementById("header").src = "https://i.imgur.com/71dGYmI.png";
+
+document.body.background = "https://i.imgur.com/hFxTLt5.png";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#856800!important;}</style>";
+
+//#endcode
