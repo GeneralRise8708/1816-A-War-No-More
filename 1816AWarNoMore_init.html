@@ -1,3 +1,37 @@
+e.CandidText = "Select your Presidential nominee:"
+e.VpText = "Select your Vice Presidential nominee:"
+
+e.ElectionPopup = "As voters go to their polling places, and as legistlatures cast their votes, it's all going to come down to this. May the best man win."
+
+
+
+let previousCandidate = null;
+
+const startScreenUpdater = setInterval(function() {
+    const goBackButton = document.getElementById("candidate_id_back");
+    const candidateButton = document.getElementById("candidate_id_button");
+    const runningMateButton = document.getElementById("running_mate_id_button");
+    const finalScreenBB = document.getElementById("opponent_selection_id_back");
+    const finalScreenID = document.getElementById("opponent_selection_id_button");
+
+    const c = document.getElementById("candidate_id")?.value ?? -1;
+
+    if (c !== previousCandidate) {
+        previousCandidate = c; 
+
+        if (c == 131) {
+            if (!candidateButton) {
+                goBackButton?.click();
+                const initContinue = document.getElementById("election_id_button");
+                initContinue?.click();
+            }
+        } else if (c == 132) {
+            candidateButton?.remove();
+        }
+    }
+
+}, 20); 
+
 campaignTrail_temp.modBoxTheme = {
      "header_color": "#f09800",
      "header_text_color": "#ffffff",
@@ -60,7 +94,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "display_year": "1816 A War No More",
+            "display_year": "A War No More",
             "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, defeating the Virginia Dynasty with Federalist support. When Clinton took office, he was left with the responsibility of ending the War of 1812. As an anti-war candidate, Clinton hoped to get a peace deal done with Great Britain. In July, there was a breakthrough in peace negotiations, and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, former Secretary of State James Monroe opposed Clinton's agenda and decided to run for president.<br><br><button onclick='next0()'>More</button></p>",
             "image_url": "https://i.imgur.com/8BKBtEj.png",
             "winning_electoral_vote_number": 111,
@@ -77,15 +111,15 @@ campaignTrail_temp.temp_election_list = [
         "id": 20,
         "year": 2016,
         "is_premium": 0,
-        "display_year": "1816 - A War No More"
+        "display_year": "A War No More"
     }
 ]
 
-campaignTrail_temp.credits = "<button onclick='credits()'>GeneralRise, TheMcCain, Listman, and E</button>";
+campaignTrail_temp.credits = "<button onclick='credits()'>The War No More Team</button>";
 
   credits = function() {
-    c = ["This mod was made by General_Rise8708 and TheMcCain", "Listman made the map", "Banner was made by E", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
-    text = "1816: A War No More Credits\n\n"
+    c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and E.", "More specifically:", "Lead Dev//Writing - General_Rise8708", "TheMcCain - CYOA, Coding", "Custom map was made by Listman", "Banner was made by E", "Decstar - Music Player", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
+    text = "A War No More was made by:\n\n"
     for (i in c) {
         text += c[i] + "\n"
     }
@@ -93,7 +127,7 @@ campaignTrail_temp.credits = "<button onclick='credits()'>GeneralRise, TheMcCain
   }
 
 next0 = function() {
-    text = "<p><li>Dewitt Clinton must defend his wartime record and highlight his foreign policy victories, all while fending off the Southern wing of the party. If he is to succeed, he must build a winning coalition in both New England and the Mid-Atlantic.</li><li>James Monroe is apart of the Virginia Dynasty, and starts the election with a lead. To win, he could either attack Clinton’s unpopular peace deal, or emphasize Clinton's ties to the dying and disliked Federalist Party.</li><br><button onclick='back0()'>Back</button></p>"
+    text = "<p><li>DeWitt Clinton must defend his wartime record and highlight his foreign policy victories, all while fending off the Southern wing of the party. If he is to succeed, he must build a winning coalition in both New England and the Mid-Atlantic.</li><li>James Monroe is apart of the Virginia Dynasty, and starts the election with a lead. To hold on for the win, he could either attack Clinton’s unpopular peace deal, or highlight  Clinton's ties to the dying and increasingly disliked Federalist Party.</li><br><button onclick='back0()'>Back</button></p>"
     document.getElementById("election_summary").innerHTML = text
 }
 back0 = function() {
@@ -109,10 +143,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "DeWitt",
             "last_name": "Clinton",
             "election": 20,
-            "party": "Democratic-Republican",
+            "party": "Democratic Republican",
             "state": "New York",
             "priority": 1,
-            "description": "<p>Current President of the United States, Dewitt Clinton, ended the War of 1812 on August 8th, 1813, when he visited Great Britain and was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool. This has faced backlash everywhere in the U.S. besides New England. However, he has become more approved with voters after the U.S. became stronger for the first time since before the Embargo Acts of 1807. This is because the U.S. has reopened trade ports with Great Britain.</p>\n<p>Now, in 1816, Clinton is faced with the tasks of expanding into the Northwest Territories, keeping Great Britain on their good side, and keeping voters pleased with his Presidency.  ",
+            "description": "<p>The current President of the United States, Dewitt Clinton, ended the War of 1812 on August 8th, 1813, when he visited Great Britain and was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool. This has faced backlash everywhere in the U.S. besides New England. However, he has become more approved with voters after the U.S. became stronger for the first time since before the Embargo Acts of 1807. This is because the U.S. has reopened trade ports with Great Britain.</p>\n<p>Now, in 1816, Clinton is faced with the tasks of expanding into the Northwest Territories, keeping Great Britain on their good side, and keeping voters pleased with his Presidency.  ",
             "color_hex": "#d66f43",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -158,11 +192,11 @@ campaignTrail_temp.candidate_json = [
             "party": "Democratic Republican",
             "state": "Virginia",
             "priority": 1,
-            "description": "<p>Not Playable</p>",
+            "description": "<em>Here for context. Will likely be added in the future.</em><p>After the defeat of James Madison in 1812, the Virginia Dynasty had collapsed, and the southern Democratic-Republicans were in disarray. James Madison, the former Secretary of State under Madison, quickly became their preferred choice. Despite being only 58 years old, he has accumulated a large amount of experience, serving as a Virginia Senator, Virginia Governor, Ambassador to the United Kingdom and France, and as Secretary of State. With a wing that is eager to win back the Executive Mansion from Clinton, and a vulnerable opponent, many wonder if Clinton even stands a chance. All Monroe has to do is continue hammering at Clinton, and making sure that he doesn't pull off another upset.</p>",
             "color_hex": "#0cb800",
             "secondary_color_hex": null,
-            "is_active": 0,
-            "image_url": "https://i.imgur.com/lTV3ev1.png",
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/YCgtg54.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -196,35 +230,12 @@ campaignTrail_temp.candidate_json = [
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 439,
-        "fields": {
-            "first_name": "Bill",
-            "last_name": "Clinton",
-            "election": 20,
-            "party": "N/A",
-            "state": "N/A",
-            "priority": 1,
-            "description": "<p>Put description here</p>",
-            "color_hex": "#d66f43",
-            "secondary_color_hex": null,
-            "is_active": 0,
-            "image_url": "https://i.imgur.com/YxZbQV9.png",
-            "electoral_victory_message": "This guy wins!",
-            "electoral_loss_message": "This guy loses!",
-            "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Wait what?! You picked Bill Clinton?!?!! Really?!?!?! Bill Clinton is literally -130 years old! Well, there is no coming back from this. Well, anyways, Bill Clinton is not even an embryo, so I don't know how he will campaign for you. You do know his grandparents are not even alive, right? So, yeah, it looks like you are going to lose. So want to go get some tea or something?</p> ",
-            "candidate_score": 1,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
         "pk": 440,
         "fields": {
             "first_name": "Daniel",
             "last_name": "D. Tompkins",
             "election": 20,
-            "party": "Democratic-Republican",
+            "party": "Democratic Republican",
             "state": "New York",
             "priority": 1,
             "description": "<p>Put description here</p>",
@@ -235,7 +246,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Not Playable</p>",
+            "description_as_running_mate": "<p>Not Playable. If you managed to see this, either you're looking at the source code or our code broke. Thanks for playing, while you're here.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -257,14 +268,6 @@ campaignTrail_temp.running_mate_json = [
         "fields": {
             "candidate": 131,
             "running_mate": 438
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 156560,
-        "fields": {
-            "candidate": 131,
-            "running_mate": 439
         }
     },
     {
@@ -356,6 +359,267 @@ style.innerHTML = `
     background-color: #8640A3;
   }
 `;
+
+ // Music player, Made by DecstarG
+  
+$("#game_start").click((event) => {
+    event.preventDefault();
+        musicMode()
+  })
+
+  musicMode = () => {
+    // Initialise custom music
+  
+    $("#music_player")[0].children[0].style.display = "none"
+    $("#music_player")[0].children[1].style.display = "none"
+  
+    document.getElementById("modLoadReveal").style.display = "none"
+    document.getElementById("modloaddiv").style.display = "none"
+  
+    musicBox = document.getElementById("music_player")
+    musicBox.style.display = ""
+  
+    var trackSel;
+    e = campaignTrail_temp
+    e.selectedSoundtrack = 0
+  
+    toTime = (seconds) => {
+        var date = new Date(null);
+        date.setSeconds(seconds);
+        return date.toISOString().substr(11, 8);
+    }
+  
+    generateTime = () => {
+        // Get the audio element
+        var audio = document.getElementById("campaigntrailmusic");
+  
+        timeTracker = document.createElement("div");
+        timeTracker.style = `
+  text-align:left;
+  border-style:solid;
+  border-width:3px;
+  height:150px;
+  width:200px;
+  background-color:#999999;
+  float:right;
+  padding: 10px;
+  `
+        $("#trackSelParent")[0].prepend(timeTracker);
+        $("#trackSelParent")[0].prepend(document.createElement("br"));
+  
+        // Create a new element to display the current position of the audio
+        var positionDisplay = document.createElement("gg");
+        positionDisplay.id = "position-display";
+  
+        // Create a new slider element to change the time
+        var timeSlider = document.createElement("input");
+        timeSlider.type = "range";
+        timeSlider.min = 0;
+        timeSlider.max = 1;
+        timeSlider.step = 0.001;
+        timeSlider.value = 0;
+        timeSlider.style.width = "200px";
+        timeSlider.id = "time-slider";
+  
+        var pausePlay = document.createElement("button");
+        pausePlay.id = "position-display";
+        pausePlay.innerHTML = "<b>Pause</b>"
+        pausePlay.style.width = "100%";
+  
+  
+        pausePlay.addEventListener("click", event => {
+            event.preventDefault();
+            updatePositionDisplay();
+            let audio = document.getElementById("campaigntrailmusic");
+            if (audio.paused) {
+                audio.play();
+                event.target.innerHTML = "<b>Pause</b>";
+                return;
+            }
+            audio.pause();
+            event.target.innerHTML = "<b>Play</b>";
+            return;
+        })
+  
+        var volumeLabel = document.createElement("gg");
+        volumeLabel.id = "volume-label";
+        volumeLabel.innerHTML = "<br><b>Volume: </b>"
+  
+        var volumeSlider = document.createElement("input");
+        volumeSlider.type = "range";
+        volumeSlider.min = 0;
+        volumeSlider.max = 1;
+        volumeSlider.step = 0.001;
+        volumeSlider.value = 0;
+        volumeSlider.style.width = "200px";
+        volumeSlider.id = "volume-slider";
+  
+        volumeSlider.value = audio.volume;
+  
+        timeTracker.appendChild(pausePlay);
+        timeTracker.appendChild(document.createElement("br"));
+        timeTracker.appendChild(document.createElement("br"));
+        timeTracker.appendChild(positionDisplay);
+        timeTracker.appendChild(timeSlider);
+        timeTracker.appendChild(volumeLabel);
+        timeTracker.appendChild(volumeSlider);
+  
+        updatePositionDisplay();
+  
+        //for (let i = 0; i < 10; i++)
+        //timeTracker.append(document.createElement("br"));
+  
+  
+        // Function to update the position display
+        function updatePositionDisplay() {
+            positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+            timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+        }
+  
+        // Function to change the time of the audio
+        function changeTime() {
+            positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+            audio.currentTime = timeSlider.value * audio.duration;
+        }
+  
+        updateVolume = event => {
+            audio.volume = event.target.value;
+        }
+  
+        // Update the position display and slider every second
+        setInterval(updatePositionDisplay, 1000);
+  
+        // Listen for changes to the time slider and change the time of the audio
+        timeSlider.addEventListener("input", changeTime);
+        volumeSlider.addEventListener("input", updateVolume)
+    }
+  
+    function newMusicPlayer() {
+        trackSel = document.createElement("div");
+        trackSel.id = "trackSelParent"
+        let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
+        z += `<b><select id='selectSoundtrack'><option value='` + soundtracks[e.selectedSoundtrack].name + `'>` + soundtracks[e.selectedSoundtrack].name + "</option>"
+        for (i in soundtracks) {
+            if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+                z += `<option value='` + soundtracks[i].name + `'>` + soundtracks[i].name + `</option>`
+            }
+        }
+        z += `</select></b><br><br>`
+            // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+        for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+            let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+            let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="` + i + `">` + a.name + `</label><br>`
+            z += b
+        }
+        z += "</div><br><br>"
+        trackSel.innerHTML = z
+  
+        // select correct song
+  
+        musicBox.appendChild(trackSel);
+        Array.from(document.getElementById("trackSel").children).filter(f => {
+            return f.tagName == "LABEL"
+        }).map(f => f.children[0])[0].checked = true
+  
+        // set soundtrack changer
+  
+        soundtrackSelector = document.getElementById("selectSoundtrack")
+        soundtrackSelector.onchange = function() {
+            for (i in soundtracks) {
+                if (soundtracks[i].name == soundtrackSelector.value) {
+                    e.selectedSoundtrack = i
+                    break
+                }
+            }
+            document.getElementById("trackSelParent").remove()
+            newMusicPlayer()
+        }
+  
+        var matches = document.querySelectorAll('.trackSelector');
+  
+        for (match in matches) {
+            matches[match].onchange = function() {
+                audio = $("#campaigntrailmusic")[0];
+                audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+                audio.currentTime = 0
+            }
+        }
+  
+        musicBox.children[2].loop = false
+        musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+  
+        musicBox.children[2].onended = function() {
+            console.log("next track")
+            let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+            let newSel = clamp(selected + 1, soundtracks[e.selectedSoundtrack].tracklist.length - 1, 0)
+            let buttons = Array.from(document.getElementById("trackSel").children).filter(f => {
+                    return f.tagName == "LABEL"
+                }).map(f => f.children[0])
+                //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+            buttons[newSel].click()
+        }
+  
+        for (w = 0; w < 7; w++) {
+            document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+        }
+  
+        generateTime();
+    }
+  
+    clamp = function(a, max, min, overflow = true) {
+        if (overflow) {
+            return a > max ? min : a < min ? max : a;
+        }
+        return a > max ? max : a < min ? min : a;
+    }
+  
+  
+    // Track list
+  
+    var soundtracks = {
+        0: {
+          name: "Re-Elect Dewitt Clinton",
+          tracklist: [
+            {
+              "name": "Talkin’ Bout a Revolution (Tracy Chapman)",
+              "url": "https://audio.jukehost.co.uk/N71JAxiHPDwjsamaGUTZIyn17V6wRsgq"
+            },
+            {
+              "name": "Yankee Doodle",
+              "url": "https://audio.jukehost.co.uk/iQlgYWMKIBvm2ejHRHW3Q5MSa0k5wY9U"
+            },
+            {
+              "name": "",
+              "url": "https://audio.jukehost.co.uk/f8ybYPfG631lwgHXJRSoLszkwnH"
+            },
+            {
+              "name": "",
+              "url": "https://audio.jukehost.co.uk/xWyGmn2j6NfvpYrvScZPLGALN6"
+            },
+            {
+              "name": "",
+              "url": "https://audio.jukehost.co.uk/hgpeWDLhU0QzWW0fGKIyXl3Z"
+            },
+            {
+              "name": "",
+              "url": "https://audio.jukehost.co.uk/Z6hNkFeEk2GFzdUBTAa46vfO"
+            },
+            {
+              "name": "",
+              "url": "https://audio.jukehost.co.uV9iVb6ZjYfvNeNW8ShcRmqIJ"
+            },
+            {
+              "name": "",
+              "url": ""
+            }
+        ]
+      }
+    }
+  
+    // Set up new music player
+  
+    newMusicPlayer()
+  }
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#8d6520";
