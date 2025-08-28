@@ -31,7 +31,7 @@ campaignTrail_temp.election_json = [
             "year": 2016,
             "display_year": "1816 A War No More",
             "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, defeating the Virginia Dynasty with Federalist support. When Clinton took office, he was left with the responsibility of ending the War of 1812. As an anti-war candidate, Clinton hoped to get a peace deal done with Great Britain. In July, there was a breakthrough in peace negotiations, and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, former Secretary of State James Monroe opposed Clinton's agenda and decided to run for president.<br><br><button onclick='next0()'>More</button></p>",
-            "image_url": "https://i.imgur.com/WAfa1Vm.png",
+            "image_url": "https://i.imgur.com/8BKBtEj.png",
             "winning_electoral_vote_number": 111,
             "advisor_url": "https://i.imgur.com/wbyKwsq.png",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
@@ -280,8 +280,51 @@ jet_data = {
 
 //#startcode
 
+$("#game_window")[0].style.background = "linear-gradient(#ff7f50, #ffb347)";
+$(".container")[0].style.background = "linear-gradient(#ffd8b0, #ffb347)";
+document.getElementById("header").src = "https://i.imgur.com/RqUmrzI.jpeg";
 
-corrr = '\n              <h2>A War No More</h2><font id="wittyquote" size="4" color="white"><em>"Pleasure is a shadow, wealth is vanity, and power a pageant; but knowledge is ecstatic in enjoyment, perennial in frame, unlimited in space and indefinite in duration." - DeWitt Clinton</em></font>\n            ';
+document.head.innerHTML += `
+<style>
+    #results_container {
+        color: #000000;
+    }
+    .inner_window_w_desc {
+        background: linear-gradient(#ffd1a4, #ff8c42);
+    }
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    .animated-header {
+        background: linear-gradient(45deg, #ff7f50, #ffb347, #ff7f50);
+        background-size: 200% 200%;
+        animation: gradientMove 5s ease infinite;
+    }
+</style>`;
+
+corrr = `
+  <h2 class="animated-header" style="
+    font-family: Tahoma;
+    font-size: 36px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+  ">
+   A War No More
+  </h2>
+`;
+
+let style = document.createElement('style');
+style.type = 'text/css';
+style.id = 'dynamic-style';
+
+style.innerHTML = `
+  .campaign_trail_start_emphasis {
+    background-color: #8640A3;
+  }
+`;
 
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#8d6520";
@@ -296,7 +339,7 @@ $(".container")[0].style.backgroundColor = "#0085c7";
 
 document.getElementById("header").src = "https://i.imgur.com/I3aIsxl.png";
 
-document.body.background = "https://i.imgur.com/hFxTLt5.png";
+document.body.background = "https://i.imgur.com/4mkvyB6.jpeg";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#856800!important;}</style>";
 
