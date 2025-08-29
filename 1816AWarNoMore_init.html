@@ -56,8 +56,8 @@ campaignTrail_temp.achievements = {
         "description" : "Win in a massive landslide.",
         "cannotBeCheated" : true
      },
-    "Radical Abolitionist Clinton" : {
-        "image" : "https://i.imgur.com/r869aNU.jpeg",
+    "Southern Nightmare" : {
+        "image" : "https://i.imgur.com/CszxWAt.png",
         "description" : "Say you support abolition, and still win.",
         "cannotBeCheated" : true
     }
@@ -95,7 +95,7 @@ campaignTrail_temp.election_json = [
         "fields": {
             "year": 2016,
             "display_year": "A War No More",
-            "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, defeating the Virginia Dynasty with Federalist support. When Clinton took office, he was left with the responsibility of ending the War of 1812. As an anti-war candidate, Clinton hoped to get a peace deal done with Great Britain. In July, there was a breakthrough in peace negotiations, and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, former Secretary of State James Monroe opposed Clinton's agenda and decided to run for president.<br><br><button onclick='next0()'>More</button></p>",
+            "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, destroying the Virginia Dynasty that had lasted years. When Clinton took office, he was left with the responsibility of ending the War of 1812. One of his main campaign promises, peace with Britain, was a priority. In June, Clinton visited Great Britain for a peace settlement. He was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, Clinton remains unpopular in much of the country, and the former Sec. State, James Monroe, is running to oppose him.<br><br><button onclick='next0()'>More</button></p>",
             "image_url": "https://i.imgur.com/8BKBtEj.png",
             "winning_electoral_vote_number": 112,
             "advisor_url": "https://i.imgur.com/wbyKwsq.png",
@@ -118,8 +118,8 @@ campaignTrail_temp.temp_election_list = [
 campaignTrail_temp.credits = "<button onclick='credits()'>The War No More Team</button>";
 
   credits = function() {
-    c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and E.", "More specifically:", "Lead Dev//Writing - General_Rise8708", "TheMcCain - CYOA, Coding", "Custom map was made by Listman", "Banner was made by E", "Decstar - Music Player", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
-    text = "A War No More was made by:\n\n"
+    c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and E.", "More specifically:", "This mod was made by General_Rise8708 and TheMcCain, with General_Rise doing most writing and TheMcCain doing most coding, with some coding help from Listman.", "Custom map was also made by Listman", "Banner was made by E", "Music player was made by DecstarG", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
+    text = "CREDITS:\n\n"
     for (i in c) {
         text += c[i] + "\n"
     }
@@ -127,11 +127,11 @@ campaignTrail_temp.credits = "<button onclick='credits()'>The War No More Team</
   }
 
 next0 = function() {
-    text = "<p><li>DeWitt Clinton must defend his wartime record and highlight his foreign policy victories, all while fending off the Southern wing of the party. If he is to succeed, he must build a winning coalition in both New England and the Mid-Atlantic.</li><li>James Monroe is apart of the Virginia Dynasty, and starts the election with a lead. To hold on for the win, he could either attack Clinton’s unpopular peace deal, or highlight  Clinton's ties to the dying and increasingly disliked Federalist Party.</li><br><button onclick='back0()'>Back</button></p>"
+    text = "<p><li>DeWitt Clinton must defend his wartime record and emphasize his foreign policy victories, all while fending off the Southern wing of the party. If he is to succeed, he must build a winning coalition in both New England and the Mid-Atlantic.</li><li>James Monroe hopes to reaffirm the power of Virginian interests, and starts the election with a lead. To hold on for the win, he could either attack Clinton’s unpopular peace deal, or highlight  Clinton's ties to the dying and increasingly disliked Federalist Party.</li><br><button onclick='back0()'>Back</button></p>"
     document.getElementById("election_summary").innerHTML = text
 }
 back0 = function() {
-    text = "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, defeating the Virginia Dynasty with Federalist support. When Clinton took office, he was left with the responsibility of ending the War of 1812. As an anti-war candidate, Clinton hoped to get a peace deal done with Great Britain. In July, there was a breakthrough in peace negotiations, and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, former Secretary of State James Monroe opposed Clinton's agenda and decided to run for president.<br><br><button onclick='next0()'>More</button></p>"
+    text = "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, destroying the Virginia Dynasty that had lasted years. When Clinton took office, he was left with the responsibility of ending the War of 1812. One of his main campaign promises, peace with Britain, was a priority. In June, Clinton visited Great Britain for a peace settlement. He was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, Clinton remains unpopular in much of the country, and the former Sec. State, James Monroe, is running to oppose him.<br><br><button onclick='next0()'>More</button></p>"
     document.getElementById("election_summary").innerHTML = text
 }
 
@@ -143,14 +143,14 @@ campaignTrail_temp.candidate_json = [
             "first_name": "DeWitt",
             "last_name": "Clinton",
             "election": 20,
-            "party": "Democratic Republican",
+            "party": "Democratic Republican (Northern Wing)",
             "state": "New York",
             "priority": 1,
-            "description": "<p>The current President of the United States, Dewitt Clinton, ended the War of 1812 on August 8th, 1813, when he visited Great Britain and was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool. This has faced backlash everywhere in the U.S. besides New England. However, he has become more approved with voters after the U.S. became stronger for the first time since before the Embargo Acts of 1807. This is because the U.S. has reopened trade ports with Great Britain.</p>\n<p>Now, in 1816, Clinton is faced with the tasks of expanding into the Northwest Territories, keeping Great Britain on their good side, and keeping voters pleased with his Presidency.  ",
+            "description": "<p>DeWitt Clinton shouldn’t be here right now. After a highly contested election in 1812, DeWitt Clinton was able to narrowly carry Pennsylvania, and with it, the Presidency, even as he lost the popular vote to James Madison.<br><br>His peace deal with the United Kingdom was widely despised outside the Northeast, and Clinton was forced to fight allegations of him being unpatriotic. The country remains in large debt after the war, and with crop prices collapsing, the economy continues to downturn. Clinton remains popular in New England, but in most of the country, his approval ratings are in the gutter. In order to have any hope of winning, he must win both the Mid-Atlantic and Midwest. To do this, he could emphasize his support for tariffs and internal improvements, or find a way to take the attack to Monroe.",
             "color_hex": "#d66f43",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://i.imgur.com/1UnB1Si.png",
+            "image_url": "https://i.imgur.com/qPeWWbY.png",
             "electoral_victory_message": "<p>Well, Mr. Clinton, you did it! Since you won re-election, you can now make sure you keep a good relationship with Great Britain. Let's hope you will keep voters pleased during your second term. Good luck, Mr. Clinton.</p>",
             "electoral_loss_message": "<p>Mr. Clinton, despite you having a successful first term, it wasn't enough for voters. James Monroe won to become the Sixth President of the United States. As for you? Your legacy will definitely be one for the history books. You stopped the War of 1812 with a peace deal and a solid relationship with Great Britain. Word has it that James Monroe will cut trade with Great Britain once again. If that happens, then everything you worked for will be for nothing. But then again, it all might be a hoax. But you might be able to give it another shot at the presidency in 1820 or run to become a senator or governor of your home state of New York, or you may retire. Whatever you choose, I wish you the best, Mr. Clinton.</p> ",
             "no_electoral_majority_message": "<p>How did this happen? This is impossible? Well, unfortunately for you and Monroe, the House and Senate are controlled by the Democratic-Republicans, so it will be complicated to tell who will get elected. But will it be you? Only time will tell. Good luck, Mr. Clinton!",
@@ -189,10 +189,10 @@ campaignTrail_temp.candidate_json = [
             "first_name": "James",
             "last_name": "Monroe",
             "election": 20,
-            "party": "Democratic Republican",
+            "party": "Democratic Republican (Southern Wing)",
             "state": "Virginia",
             "priority": 1,
-            "description": "<em>Here for context. Will likely be added in the future.</em><p>After the defeat of James Madison in 1812, the Virginia Dynasty had collapsed, and the southern Democratic-Republicans were in disarray. James Monroe, the former Secretary of State under Madison, quickly became their preferred choice. Despite being only 58 years old, he has accumulated a large amount of experience, serving as a Virginia Senator, Virginia Governor, Ambassador to the United Kingdom and France, and as Secretary of State. With a wing that is eager to win back the Executive Mansion from Clinton, and a vulnerable opponent, many wonder if Clinton even stands a chance. All Monroe has to do is continue hammering at Clinton, and making sure that he doesn't pull off another upset.</p>",
+            "description": "<b><em>Here for Context. Hopefully coming in the future.</em></b><p>After the defeat of James Madison in 1812, the Virginia Dynasty had collapsed, and the southern Democratic-Republicans were in disarray. James Monroe, the former Secretary of State under Madison, quickly became their preferred choice. Despite being only 58 years old, he has accumulated a large amount of experience, serving as a Virginia Senator, Virginia Governor, Ambassador to the United Kingdom and France, and as Secretary of State. With a wing that is eager to win back the Executive Mansion from Clinton, and a vulnerable opponent, many wonder if Clinton even stands a chance. All Monroe has to do is continue hammering at Clinton, and making sure that he doesn't pull off another upset.</p>",
             "color_hex": "#0cb800",
             "secondary_color_hex": null,
             "is_active": 1,
@@ -246,7 +246,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
-            "description_as_running_mate": "<p>Not Playable. If you managed to see this, either you're looking at the source code or our code broke. Thanks for playing, while you're here.</p>",
+            "description_as_running_mate": "<p>Not viewable. If you managed to see this, either you're looking at the source code or our code broke. Thanks for playing, while you're here.</p>",
             "candidate_score": 1,
             "running_mate": true
         }
@@ -317,6 +317,8 @@ jet_data = {
 $("#game_window")[0].style.background = "linear-gradient(#ff7f50, #ffb347)";
 $(".container")[0].style.background = "linear-gradient(#ffd8b0, #ffb347)";
 document.getElementById("header").src = "https://i.imgur.com/ly60Au8.png";
+
+// This is what makes the banner have an animation.
 
 document.head.innerHTML += `
 <style>
