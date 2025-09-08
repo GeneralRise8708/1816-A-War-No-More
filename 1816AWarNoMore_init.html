@@ -3,7 +3,15 @@ e.VpText = "Select your Vice Presidential nominee:"
 
 e.ElectionPopup = "As voters go to their polling places, and as legistlatures cast their votes, it's all going to come down to this. May the best man win."
 
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #023e8a;
+  border-color: #0077b6;
+}
 
+;
+document.head.appendChild(style_overwrite);
 
 let previousCandidate = null;
 
@@ -104,7 +112,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2016,
-            "display_year": "A War No More",
+            "display_year": "An End To War",
             "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, destroying the Virginia Dynasty that had lasted years. When Clinton took office, he was left with the responsibility of ending the War of 1812. One of his main campaign promises, peace with Britain, was a priority. In June, Clinton visited Great Britain for a peace settlement. He was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, Clinton remains unpopular in much of the country, and the former Sec. State, James Monroe, is running to oppose him.<br><br><button onclick='next0()'>More</button></p>",
             "image_url": "https://i.imgur.com/8BKBtEj.png",
             "winning_electoral_vote_number": 112,
@@ -121,11 +129,11 @@ campaignTrail_temp.temp_election_list = [
         "id": 20,
         "year": 2016,
         "is_premium": 0,
-        "display_year": "A War No More"
+        "display_year": "An End To War"
     }
 ]
 
-campaignTrail_temp.credits = "<button onclick='credits()'>The War No More Team</button>";
+campaignTrail_temp.credits = "<button onclick='credits()'>The End To War Team</button>";
 
   credits = function() {
     c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and E.", "More specifically:", "This mod was made by General_Rise8708 and TheMcCain, with General_Rise doing most writing and TheMcCain doing most coding, with some coding help from Listman.", "Custom map was also made by Listman", "Banner was made by E", "Music player was made by DecstarG", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
@@ -319,7 +327,7 @@ jet_data = {
     "backgroundImageUrl": "https://i.imgur.com/hFxTLt5.png",
     "endingTextColor": "#000000",
     "customQuote": "\"Pleasure is a shadow, wealth is vanity, and power a pageant; but knowledge is ecstatic in enjoyment, perennial in frame, unlimited in space and indefinite in duration.\" - DeWitt Clinton",
-    "gameTitle": "A War No More"
+    "gameTitle": "End to War"
 }
 
 //#startcode
@@ -358,7 +366,7 @@ corrr = `
     padding: 10px 20px;
     border-radius: 0;
   ">
-   A War No More
+   An End To War
   </h2>
 `;
 
