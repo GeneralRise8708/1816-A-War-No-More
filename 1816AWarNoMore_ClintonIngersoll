@@ -1,3 +1,37 @@
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #ab4e02;
+  border-color: #d97321;
+}
+style.innerHTML = 
+  .inner_window_question h3 {
+    background-color: #d97321;
+  }
+  .overlay_window h3 {
+    background-color: #d97321f;
+  }
+#menu_container {
+  background-color: #d97321;
+}
+#overall_result_container {
+  background-color: #d97321;
+}
+#state_info h3 {
+  background-color: #d97321;
+}
+#overall_result h3 {
+  background-color: #d97321;
+}`
+;
+document.head.appendChild(style_overwrite);
+
+
+let style = document.createElement('style');
+style.type = 'text/css';
+style.id = 'dynamic-style';
+
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
