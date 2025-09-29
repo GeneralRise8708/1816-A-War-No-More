@@ -6191,8 +6191,8 @@ campaignTrail_temp.answer_feedback_json = [
 
 campaignTrail_temp.candidate_image_url = "https://i.imgur.com/qPeWWbY.png";
 campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/Cz1Ud6e.png";
-campaignTrail_temp.candidate_last_name = "President Clinton";
-campaignTrail_temp.running_mate_last_name = "Vice President Ingersoll";
+campaignTrail_temp.candidate_last_name = "Clinton";
+campaignTrail_temp.running_mate_last_name = "Ingersoll";
 
 
 
@@ -6209,9 +6209,9 @@ campaignTrail_temp.jet_data = [{
     "cyoa_variable_effects": {},
     "cyoa_answer_swaps": {},
     "banner_data": {
-        "canName": "President Clinton",
+        "canName": "Clinton",
         "canImage": "https://i.imgur.com/qPeWWbY.png",
-        "runName": "Vice President Ingersoll",
+        "runName": "Ingersoll",
         "runImage": "https://i.imgur.com/Cz1Ud6e.png"
     },
     "banner_enabled": true
