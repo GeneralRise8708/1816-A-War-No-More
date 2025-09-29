@@ -6184,10 +6184,15 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 14609,
             "candidate": 131,
-            "answer_feedback": "It has been confirmed that Maine will immediately be admitted as a state. Indiana will be admitted on June 8th, 1813, and Illinois on July 16th, 1813.  "
+            "answer_feedback": "It has been confirmed that Maine will immediately be admitted as a state. Indiana will be admitted on June 8th, 1813, and Illinois on July 16th, 1813. "
         }
     }
 ]
+
+campaignTrail_temp.candidate_image_url = "https://i.imgur.com/qPeWWbY.png";
+campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/Cz1Ud6e.png";
+campaignTrail_temp.candidate_last_name = "President Clinton";
+campaignTrail_temp.running_mate_last_name = "Vice President Ingersoll";
 
 
 
@@ -6204,12 +6209,12 @@ campaignTrail_temp.jet_data = [{
     "cyoa_variable_effects": {},
     "cyoa_answer_swaps": {},
     "banner_data": {
-        "canName": "",
-        "canImage": "",
-        "runName": "",
-        "runImage": ""
+        "canName": "President Clinton",
+        "canImage": "https://i.imgur.com/qPeWWbY.png",
+        "runName": "Vice President Ingersoll",
+        "runImage": "https://i.imgur.com/Cz1Ud6e.png"
     },
-    "banner_enabled": false
+    "banner_enabled": true
 }
 ]
 
