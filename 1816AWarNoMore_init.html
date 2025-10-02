@@ -1,3 +1,17 @@
+const gameStart = document.getElementById('game_start');
+    const gameWindow = document.getElementById('game_window');
+
+    if (gameStart) {
+        gameStart.innerHTML = '<strong>Let us have peace.</strong>';
+        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
+        if (window.jQuery) $('#game_start').on('click', clearHeight);
+        else gameStart.addEventListener('click', clearHeight);
+    }
+
+
+document.getElementById("inner_window_1").children[1].innerHTML = `<p>“Wow. Why do I even bother. Incompetent warmongerers like Madison have been trying to destroy our country for years, and then when I finally put a stop to it, suddenly people hate me!<br><br>Where does the Virginia Dynasty get 'leaders' like James Madison from?”`;
+document.getElementById("inner_window_1").children[0].innerHTML="<h2><i style=\"color:#FF8D4D;\">An End To War</i></h2></i>"
+
 
 e.CandidText = "Select your Presidential nominee:"
 e.VpText = "Select your Vice Presidential nominee:"
@@ -600,16 +614,16 @@ $("#game_start").click((event) => {
           name: "Re-Elect Dewitt Clinton",
           tracklist: [
             {
-              "name": "Talkin’ Bout a Revolution (Tracy Chapman)",
-              "url": "https://audio.jukehost.co.uk/N71JAxiHPDwjsamaGUTZIyn17V6wRsgq"
+              "name": "The Star Spangled Banner",
+              "url": "https://audio.jukehost.co.uk/5I84JGBliPJxR2rKIfU9lW1Dch2gj0lj"
             },
             {
               "name": "Yankee Doodle",
               "url": "https://audio.jukehost.co.uk/iQlgYWMKIBvm2ejHRHW3Q5MSa0k5wY9U"
             },
             {
-              "name": "",
-              "url": "https://audio.jukehost.co.uk/f8ybYPfG631lwgHXJRSoLszkwnH"
+              "name": "Free America",
+              "url": "https://audio.jukehost.co.uk/uCNcnEBJArTvkJrEZowAnuuitCXqXizq"
             },
             {
               "name": "",
