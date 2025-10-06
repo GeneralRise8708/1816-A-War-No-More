@@ -111,8 +111,8 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 631,
         "fields": {
-            "priority": 4,
-            "description": "Do you plan to make any attacks against the Liberty Party, a radical abolitionist group that is fielding a third party candidate?",
+            "priority": 1,
+            "description": "(December 25th 1813) Mr. Clinton, today is Christmas, D.C. is covered in snow, and you are almost done with your first year as President, you are wondering whether you will run for re-election or not. What do you think. ",
             "likelihood": 1
         }
     },
@@ -120,8 +120,8 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 633,
         "fields": {
-            "priority": 4,
-            "description": "Was there really a bargain (a “Corrupt Bargain” to many) between yourself and John Quincy Adams which elevated him to the Presidency in 1825?",
+            "priority": 1,
+            "description": "(March 10th 1816) Well, with your candidacy for re-election in the books, as you are renominated without contest, on the Southern Republicans' side, things are getting complicated. However, one name has come above the rest. James Monroe. Monroe despised you after you signed a peace treaty with Great Britain is going to keep attacking you in this election. Will you attack him? ",
             "likelihood": 1
         }
     },
@@ -326,38 +326,6 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 630,
             "description": "In anticipation of this attack, I've actually made some effort in the past year or so to scale back my amusements. I don't believe it is ever too late for a man to change their conduct."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 4177,
-        "fields": {
-            "question": 631,
-            "description": "Any attacks we make will only publicize this group more. Let's stick to our own campaign in this case."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 4178,
-        "fields": {
-            "question": 631,
-            "description": "Thomas Birney is a stooge of the Democrats, attempting to agitate emotions and divide our party. People ought to feel free to vote for him if they want to hand this election to James K. Polk."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 4179,
-        "fields": {
-            "question": 631,
-            "description": "I am steadfast against the annexation of Texas and the expansion of slavery. I believe that Birney's followers should be made aware of this point."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 4183,
-        "fields": {
-            "question": 633,
-            "description": "I don't know how many times a man can deny an unjust allegation before fatigue sets in."
         }
     },
     {
@@ -758,6 +726,30 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 632,
             "description": "Tariffs are necessary. However, I've been hearing some talk about a national bank. I just want to get this out already and say I oppose it. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14825,
+        "fields": {
+            "question": 631,
+            "description": "It's too early to tell, but I hope we will be in a better position by next year. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14831,
+        "fields": {
+            "question": 633,
+            "description": "Hell yeah. Monroe is nothing but a radical Southerner who loves Slavery and was Secretary of State under Madison. He is just as much of a failure as Madison. We will attack him relentlessly on that. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14850,
+        "fields": {
+            "question": 633,
+            "description": "Oh, it's Monroe. Not much of a shocker to be honest. Under Monroe, the U.S will most likely go to war with Great Britain, which will cause a panic or depression. He will rely mostly on Southern Politics, creating a Civil War, and will lower Tariffs, keeping the U.S. economy unstable. "
         }
     }
 ]
@@ -2944,16 +2936,6 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 2039,
-        "fields": {
-            "answer": 4183,
-            "candidate": 132,
-            "affected_candidate": 132,
-            "global_multiplier": -0.005
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 2057,
         "fields": {
             "answer": 4205,
@@ -3411,6 +3393,56 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 131,
             "global_multiplier": -0.02
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14828,
+        "fields": {
+            "answer": 14825,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14833,
+        "fields": {
+            "answer": 14831,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14835,
+        "fields": {
+            "answer": 14831,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "global_multiplier": 0.023
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14852,
+        "fields": {
+            "answer": 14850,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 14853,
+        "fields": {
+            "answer": 14850,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "global_multiplier": 0.018
+        }
     }
 ]
 
@@ -3552,26 +3584,6 @@ campaignTrail_temp.answer_score_issue_json = [
             "answer": 4172,
             "issue": 51,
             "issue_score": -0.5,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1689,
-        "fields": {
-            "answer": 4179,
-            "issue": 47,
-            "issue_score": 0.5,
-            "issue_importance": 3
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_issue",
-        "pk": 1690,
-        "fields": {
-            "answer": 4179,
-            "issue": 51,
-            "issue_score": 0.5,
             "issue_importance": 3
         }
     }
@@ -6127,7 +6139,7 @@ campaignTrail_temp.answer_score_state_json = [
             "state": 388,
             "candidate": 131,
             "affected_candidate": 131,
-            "state_multiplier": 5
+            "state_multiplier": 10
         }
     },
     {
@@ -6767,6 +6779,171 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 131,
             "state_multiplier": -0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14821,
+        "fields": {
+            "answer": 14638,
+            "state": 387,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": 10
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14843,
+        "fields": {
+            "answer": 14831,
+            "state": 386,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14844,
+        "fields": {
+            "answer": 14831,
+            "state": 389,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14845,
+        "fields": {
+            "answer": 14831,
+            "state": 390,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14846,
+        "fields": {
+            "answer": 14831,
+            "state": 400,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14847,
+        "fields": {
+            "answer": 14831,
+            "state": 404,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14848,
+        "fields": {
+            "answer": 14831,
+            "state": 405,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14849,
+        "fields": {
+            "answer": 14831,
+            "state": 407,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14854,
+        "fields": {
+            "answer": 14850,
+            "state": 386,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14855,
+        "fields": {
+            "answer": 14850,
+            "state": 389,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14856,
+        "fields": {
+            "answer": 14850,
+            "state": 390,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14857,
+        "fields": {
+            "answer": 14850,
+            "state": 400,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14858,
+        "fields": {
+            "answer": 14850,
+            "state": 404,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14859,
+        "fields": {
+            "answer": 14850,
+            "state": 405,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 14860,
+        "fields": {
+            "answer": 14850,
+            "state": 407,
+            "candidate": 131,
+            "affected_candidate": 132,
+            "state_multiplier": 0.065
+        }
     }
 ]
 
@@ -7030,15 +7207,6 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 4176,
             "candidate": 132,
             "answer_feedback": "Talk of personal foibles is probably just sound and fury in this election."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 1695,
-        "fields": {
-            "answer": 4183,
-            "candidate": 132,
-            "answer_feedback": "Sadly, some attacks never lose their luster."
         }
     },
     {
@@ -7372,6 +7540,33 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 14748,
             "candidate": 131,
             "answer_feedback": "Well, this is very unpopular. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14827,
+        "fields": {
+            "answer": 14825,
+            "candidate": 131,
+            "answer_feedback": "You have been gaining increasing popularity since August, so this could work in your favor. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14832,
+        "fields": {
+            "answer": 14831,
+            "candidate": 131,
+            "answer_feedback": "Harsh words, Dewitt. However, this could work in your favor. But keep in mind, with his candidacy, he will dominate in the South. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14851,
+        "fields": {
+            "answer": 14850,
+            "candidate": 131,
+            "answer_feedback": "The use of slippery slope works in this situation and will most certainly hurt Monroe. But the South doesn't mind. "
         }
     }
 ]
