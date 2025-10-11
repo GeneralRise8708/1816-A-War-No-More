@@ -418,7 +418,7 @@ $("#game_start").click((event) => {
   border-width:3px;
   height:150px;
   width:200px;
-  background-color:#999999;
+  background-color:#AD8B55;
   float:right;
   padding: 10px;
   `
@@ -515,7 +515,7 @@ $("#game_start").click((event) => {
     function newMusicPlayer() {
         trackSel = document.createElement("div");
         trackSel.id = "trackSelParent"
-        let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#999999;float:right;">`
+        let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#AD8B55;float:right;">`
         z += `<b><select id='selectSoundtrack'><option value='` + soundtracks[e.selectedSoundtrack].name + `'>` + soundtracks[e.selectedSoundtrack].name + "</option>"
         for (i in soundtracks) {
             if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
@@ -662,7 +662,7 @@ function appendStyle() {
         style.id = 'radio-option-style';
         style.textContent = `
           body {
-               background-image: url(https://i.imgur.com/2ex2J4Y.jpeg);
+               background-image: url(https://i.imgur.com/tg28aiA.jpeg);
                background-position: center;
                background-size: cover;
           }
