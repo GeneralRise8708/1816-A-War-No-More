@@ -7179,8 +7179,8 @@ campaignTrail_temp.jet_data = [{
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
 `#campaign_sign {
-  background-color: #FFBD63;
-  border-color: #FF9D4B;
+  background-color: #AC8A55;
+  border-color: #89704F;
 }`
 ;
 document.head.appendChild(style_overwrite);
