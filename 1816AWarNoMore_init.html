@@ -9,13 +9,10 @@ const gameStart = document.getElementById('game_start');
     }
 
 
-document.getElementById("inner_window_1").children[1].innerHTML = `<p>“Wow. Why do I even bother. Incompetent warmongerers like Madison have been trying to destroy our country for years, and then when I finally put a stop to it, suddenly people hate me!<br><br>Where does the Virginia Dynasty get 'leaders' like James Madison from?”`;
-document.getElementById("inner_window_1").children[0].innerHTML="<h2><i style=\"color:#FF8D4D;\">An End To War</i></h2></i>"
-
-
 e.CandidText = "Select your Presidential nominee:"
 e.VpText = "Select your Vice Presidential nominee:"
 e.ElectionPopup = "As voters go to their polling places, and as legistlatures cast their votes, it's all going to come down to this. May the best man win."
+
 
 
 let previousCandidate = null;
@@ -122,9 +119,9 @@ campaignTrail_temp.global_parameter_json = [
 campaignTrail_temp.election_json = [
     {
         "model": "campaign_trail.election",
-        "pk": 20,
+        "pk": 13,
         "fields": {
-            "year": 2016,
+            "year": 1816,
             "display_year": "An End To War",
             "summary": "<p>After a narrow race in 1812, DeWitt Clinton stunned the nation by narrowly defeating President Madison, destroying the Virginia Dynasty that had lasted years. When Clinton took office, he was left with the responsibility of ending the War of 1812. One of his main campaign promises, peace with Britain, was a priority. In June, Clinton visited Great Britain for a peace settlement. He was able to negotiate a peace deal with Robert Jenkinson, 2nd Earl of Liverpool and on August 8th, 1813, a peace deal was signed, and the War of 1812 was over. However, Clinton remains unpopular in much of the country, and the former Sec. State, James Monroe, is running to oppose him.<br><br><button onclick='next0()'>More</button></p>",
             "image_url": "https://i.imgur.com/8BKBtEj.png",
@@ -139,7 +136,7 @@ campaignTrail_temp.election_json = [
 
 campaignTrail_temp.temp_election_list = [
     {
-        "id": 20,
+        "id": 13,
         "year": 2016,
         "is_premium": 0,
         "display_year": "An End To War"
@@ -149,7 +146,7 @@ campaignTrail_temp.temp_election_list = [
 campaignTrail_temp.credits = "<button onclick='credits()'>The End To War Team</button>";
 
   credits = function() {
-    c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and E.", "More specifically:", "This mod was made by General_Rise8708 and TheMcCain, with General_Rise doing most writing and TheMcCain doing most coding, with some coding help from Listman.", "Custom map was also made by Listman", "Banner was made by E", "Music player was made by DecstarG", "Thanks to everyone who playtested.", "And thank you for playing. We hope you enjoy/enjoyed."]
+    c = ["This mod was created by GeneralRise, TheMcCain, ListMan, and littleamericanman_85501.", "More specifically:", "This mod was made by General_Rise8708 and TheMcCain, with General_Rise doing most writing and TheMcCain doing most coding, and also thanks to Listman for helping.", "Banner was made by littleamericanman_85501.", "Music player was made by DecstarG.", "Thanks to everyone who playtested.", "And thanks for playing!"]
     text = "CREDITS:\n\n"
     for (i in c) {
         text += c[i] + "\n"
@@ -173,7 +170,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "DeWitt",
             "last_name": "Clinton",
-            "election": 20,
+            "election": 13,
             "party": "Democratic Republican (Northern Wing)",
             "state": "New York",
             "priority": 1,
@@ -196,7 +193,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "Jared",
             "last_name": "Ingersoll",
-            "election": 20,
+            "election": 13,
             "party": "Federalist",
             "state": "Pennsylvania ",
             "priority": 1,
@@ -219,7 +216,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "James",
             "last_name": "Monroe",
-            "election": 20,
+            "election": 13,
             "party": "Democratic Republican (Southern Wing)",
             "state": "Virginia",
             "priority": 1,
@@ -242,7 +239,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "John",
             "last_name": "E. Howard",
-            "election": 20,
+            "election": 13,
             "party": "Federalist",
             "state": "Maryland",
             "priority": 1,
@@ -265,7 +262,7 @@ campaignTrail_temp.candidate_json = [
         "fields": {
             "first_name": "Daniel",
             "last_name": "D. Tompkins",
-            "election": 20,
+            "election": 13,
             "party": "Democratic Republican",
             "state": "New York",
             "priority": 1,
@@ -313,7 +310,7 @@ campaignTrail_temp.running_mate_json = [
 
 campaignTrail_temp.opponents_default_json = [
     {
-        "election": 20,
+        "election": 13,
         "candidates": [
             131,
             132
@@ -323,7 +320,7 @@ campaignTrail_temp.opponents_default_json = [
 
 campaignTrail_temp.opponents_weighted_json = [
     {
-        "election": 20,
+        "election": 13,
         "candidates": [
             131,
             132
@@ -344,44 +341,11 @@ jet_data = {
 }
 
 //#startcode
+$("#game_window")[0].style.background = "linear-gradient(to bottom, #3e2c1a, #b08d57)";
 
-$("#game_window")[0].style.background = "linear-gradient(#ff7f50, #ffb347)";
-$(".container")[0].style.background = "linear-gradient(#ffd8b0, #ffb347)";
+$(".container")[0].style.background = "linear-gradient(to bottom, #cbb994, #a0815a)";
+
 document.getElementById("header").src = "https://i.imgur.com/ly60Au8.png";
-
-// This is what makes the banner have an animation.
-
-document.head.innerHTML += `
-<style>
-    #results_container {
-        color: #000000;
-    }
-    .inner_window_w_desc {
-        background: linear-gradient(#ffd1a4, #ff8c42);
-    }
-    @keyframes gradientMove {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-    .animated-header {
-        background: linear-gradient(45deg, #ff7f50, #ffb347, #ff7f50);
-        background-size: 200% 200%;
-        animation: gradientMove 5s ease infinite;
-    }
-</style>`;
-
-corrr = `
-  <h2 class="animated-header" style="
-    font-family: Tahoma;
-    font-size: 36px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 0;
-  ">
-   An End To War
-  </h2>
-`;
 
 let style = document.createElement('style');
 style.type = 'text/css';
@@ -389,9 +353,30 @@ style.id = 'dynamic-style';
 
 style.innerHTML = `
   .campaign_trail_start_emphasis {
-    background-color: #8640A3;
+    background-color: #8D7351;
+  }
+
+ /* Header and text colors */
+  #final_results_description h3,
+  #overall_details_container h3,
+  #overall_election_details h4,
+  #main_content_area_reading h3.results_tab_header,
+  .inner_window_w_desc h3 {
+    color: white;
+  }
+
+  #main_content_area_reading p,
+  #final_results_description p,
+  div#site_credits p,
+  div#site_credits a,
+  .visit_text,
+  p#credits {
+    color: white !important;
   }
 `;
+
+document.head.appendChild(style);
+
 
  // Music player, Made by DecstarG
   
@@ -654,8 +639,42 @@ $("#game_start").click((event) => {
     newMusicPlayer()
   }
 
+quotes = ["'Knowledge is ecstatic in enjoyment, perennial in frame, unlimited in space and indefinite in duration.' - DeWitt Clinton", "'If men were angels, no government would be necessary.' - James Madison.", "'We lack many things, but we possess the most precious of all, liberty.' - James Monroe"]
+customquote = quotes[Math.floor((Math.random() * quotes.length))]
+            
+corrr = `
+<div style="background:linear-gradient(to bottom,#5b462c,#a68a64); color:white;">
+  <h2>CAMPAIGN TRAIL SHOWCASE</h2>
+  <font id="wittyquote" size="3" color="white"><em>${customquote}</em></font>
+</div>
+`;
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#8d6520";
+function appendStyle() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const metaTag = document.createElement('meta');
+        metaTag.name = "viewport";
+        metaTag.content = "width=device-width, initial-scale=1";
+        document.head.appendChild(metaTag);
+    }
+
+    if (!document.querySelector('#radio-option-style')) {
+        const style = document.createElement('style');
+        style.id = 'radio-option-style';
+        style.textContent = `
+          body {
+               background-image: url(https://i.imgur.com/2ex2J4Y.jpeg);
+               background-position: center;
+               background-size: cover;
+          }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+appendStyle();
+
+            
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#A58963";
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#004f80";
 
@@ -667,8 +686,8 @@ $(".container")[0].style.backgroundColor = "#0085c7";
 
 document.getElementById("header").src = "https://i.imgur.com/ly60Au8.png";
 
-document.body.background = "https://i.imgur.com/4mkvyB6.jpeg";
+document.body.background = "https://i.imgur.com/C6ihfIH.jpeg";
 
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#856800!important;}</style>";
+document.head.innerHTML += '<style>#results_container {color:#000000;} .inner_window_w_desc {background:linear-gradient(to bottom,#5b462c,#a68a64)!important;border:1px solid #3b2a16;box-shadow:inset 0 0 10px rgba(0,0,0,0.25);color:#000000;}</style>';
 
 //#endcode
