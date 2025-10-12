@@ -1,14 +1,3 @@
-const gameStart = document.getElementById('game_start');
-    const gameWindow = document.getElementById('game_window');
-
-    if (gameStart) {
-        gameStart.innerHTML = '<strong>Let us have peace.</strong>';
-        const clearHeight = () => { if (gameWindow) gameWindow.style.removeProperty('height'); };
-        if (window.jQuery) $('#game_start').on('click', clearHeight);
-        else gameStart.addEventListener('click', clearHeight);
-    }
-
-
 e.CandidText = "Select your Presidential nominee:"
 e.VpText = "Select your Vice Presidential nominee:"
 e.ElectionPopup = "As voters go to their polling places, and as legistlatures cast their votes, it's all going to come down to this. May the best man win."
