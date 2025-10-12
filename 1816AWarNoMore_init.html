@@ -1,6 +1,71 @@
+document.head.innerHTML += `
+<style>
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .overlay_window {
+    animation: fadeInScale 0.3s cubic-bezier(0.3, 1.2, 0.2, 1) forwards;
+    opacity: 0;
+    background: linear-gradient(135deg, #735C3E, #5F4A33, #4C3B27);
+    color: #ffffff;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(50, 35, 20, 0.6);
+    box-shadow:
+      0 0 0.5em rgba(50, 35, 20, 0.5),
+      0 0 0.75em rgba(70, 50, 30, 0.3),
+      0 0 1em rgba(90, 70, 40, 0.2);
+    display: flex;
+    flex-flow: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
+  }
+
+  .overlay_window h3 {
+    background: linear-gradient(135deg, #8A6B4F, #735C3E, #5F4A33);
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 0;
+    border-bottom: 1px solid rgba(40, 25, 10, 0.5);
+    box-shadow:
+      inset 0 1px 2px rgba(255, 255, 255, 0.05),
+      0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+  }
+
+  .overlay_window a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .overlay_window a:hover {
+    opacity: 0.8;
+  }
+
+  .overlay_window::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.15));
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+</style>
+`;
+
+
 e.CandidText = "Select your Presidential nominee:"
 e.VpText = "Select your Vice Presidential nominee:"
-e.ElectionPopup = "As voters go to their polling places, and as legistlatures cast their votes, it's all going to come down to this. May the best man win."
 
 let previousCandidate = null;
 
