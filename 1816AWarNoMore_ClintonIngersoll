@@ -995,7 +995,7 @@ campaignTrail_temp.states_json = [
             "name": "Kentucky",
             "abbr": "KY",
             "electoral_votes": 12,
-            "popular_votes": 10,
+            "popular_votes": 8934,
             "poll_closing_time": 90,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1034,7 +1034,7 @@ campaignTrail_temp.states_json = [
             "name": "Maryland",
             "abbr": "MD",
             "electoral_votes": 11,
-            "popular_votes": 10736,
+            "popular_votes": 27138,
             "poll_closing_time": 60,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1112,7 +1112,7 @@ campaignTrail_temp.states_json = [
             "name": "Ohio",
             "abbr": "OH",
             "electoral_votes": 8,
-            "popular_votes": 3919,
+            "popular_votes": 10721,
             "poll_closing_time": 0,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1125,7 +1125,7 @@ campaignTrail_temp.states_json = [
             "name": "Pennsylvania",
             "abbr": "PA",
             "electoral_votes": 25,
-            "popular_votes": 43324,
+            "popular_votes": 77978,
             "poll_closing_time": 0,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1190,7 +1190,7 @@ campaignTrail_temp.states_json = [
             "name": "Virginia",
             "abbr": "VA",
             "electoral_votes": 25,
-            "popular_votes": 6863,
+            "popular_votes": 20574,
             "poll_closing_time": 30,
             "winner_take_all_flg": 1,
             "election": 20
