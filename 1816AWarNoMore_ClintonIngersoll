@@ -1016,25 +1016,12 @@ campaignTrail_temp.states_json = [
     },
     {
         "model": "campaign_trail.state",
-        "pk": 391,
-        "fields": {
-            "name": "Maine",
-            "abbr": "ME",
-            "electoral_votes": 9,
-            "popular_votes": 8763,
-            "poll_closing_time": 120,
-            "winner_take_all_flg": 1,
-            "election": 20
-        }
-    },
-    {
-        "model": "campaign_trail.state",
         "pk": 392,
         "fields": {
             "name": "Maryland",
             "abbr": "MD",
             "electoral_votes": 11,
-            "popular_votes": 27138,
+            "popular_votes": 37138,
             "poll_closing_time": 60,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1047,7 +1034,7 @@ campaignTrail_temp.states_json = [
             "name": "Massachusetts",
             "abbr": "MA",
             "electoral_votes": 15,
-            "popular_votes": 40384,
+            "popular_votes": 38384,
             "poll_closing_time": 90,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1112,7 +1099,7 @@ campaignTrail_temp.states_json = [
             "name": "Ohio",
             "abbr": "OH",
             "electoral_votes": 8,
-            "popular_votes": 10721,
+            "popular_votes": 16721,
             "poll_closing_time": 0,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1190,7 +1177,7 @@ campaignTrail_temp.states_json = [
             "name": "Virginia",
             "abbr": "VA",
             "electoral_votes": 25,
-            "popular_votes": 20574,
+            "popular_votes": 32514,
             "poll_closing_time": 30,
             "winner_take_all_flg": 1,
             "election": 20
@@ -1203,21 +1190,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 47,
         "fields": {
-            "name": "Clinton's Presidency",
+            "name": "DeWitt Clinton",
             "description": 0,
-            "stance_1": "Strongly Supports",
+            "stance_1": "A Peacemaker & Hero",
             "stance_desc_1": 0,
-            "stance_2": "Supports",
+            "stance_2": "An Idealist & Visionary",
             "stance_desc_2": 0,
-            "stance_3": "Somewhat Supports",
+            "stance_3": "Good but Naive",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "On The Fence",
             "stance_desc_4": 0,
-            "stance_5": "Somewhat Opposes",
+            "stance_5": "Imperfect & Incompetent",
             "stance_desc_5": 0,
-            "stance_6": "Opposes",
+            "stance_6": "Imperfect & Incompetent",
             "stance_desc_6": 0,
-            "stance_7": "Strongly Opposes",
+            "stance_7": "A Loyalist & Traitor",
             "stance_desc_7": 0,
             "election": 13
         }
@@ -1228,19 +1215,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Slavery",
             "description": 0,
-            "stance_1": "Very Opposed",
+            "stance_1": "No Expansion",
             "stance_desc_1": 0,
-            "stance_2": "Opposes",
+            "stance_2": "Worried",
             "stance_desc_2": 0,
-            "stance_3": "Somewhat Opposes",
+            "stance_3": "Concerned",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Don't Care",
             "stance_desc_4": 0,
-            "stance_5": "Somewhat Supports",
+            "stance_5": "Supports",
             "stance_desc_5": 0,
-            "stance_6": "Supports",
+            "stance_6": "Expand",
             "stance_desc_6": 0,
-            "stance_7": "Expand",
+            "stance_7": "Fire-Eaters",
             "stance_desc_7": 0,
             "election": 13
         }
@@ -1251,9 +1238,9 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Tariffs",
             "description": 0,
-            "stance_1": "Protectionist",
+            "stance_1": "Mercantilists",
             "stance_desc_1": 0,
-            "stance_2": "Supportive",
+            "stance_2": "Protectionist",
             "stance_desc_2": 0,
             "stance_3": "Leans Supportive",
             "stance_desc_3": 0,
@@ -1263,7 +1250,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_5": 0,
             "stance_6": "Opposed",
             "stance_desc_6": 0,
-            "stance_7": "Anathema",
+            "stance_7": "Illegal!",
             "stance_desc_7": 0,
             "election": 13
         }
@@ -1297,9 +1284,9 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Great Britain",
             "description": 0,
-            "stance_1": "Loyalist",
+            "stance_1": "Anglophones",
             "stance_desc_1": 0,
-            "stance_2": "Anglophone",
+            "stance_2": "Anglophones",
             "stance_desc_2": 0,
             "stance_3": "Somewhat Supportive",
             "stance_desc_3": 0,
@@ -1307,7 +1294,7 @@ campaignTrail_temp.issues_json = [
             "stance_desc_4": 0,
             "stance_5": "Somewhat Opposed",
             "stance_desc_5": 0,
-            "stance_6": "Francophone",
+            "stance_6": "Francophones",
             "stance_desc_6": 0,
             "stance_7": "Radical Dictators",
             "stance_desc_7": 0,
