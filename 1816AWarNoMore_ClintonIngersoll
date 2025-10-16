@@ -1079,6 +1079,19 @@ campaignTrail_temp.states_json = [
     },
     {
         "model": "campaign_trail.state",
+        "pk": 391,
+        "fields": {
+            "name": "Maine",
+            "abbr": "ME",
+            "electoral_votes": 0,
+            "popular_votes": 0,
+            "poll_closing_time": 120,
+            "winner_take_all_flg": 1,
+            "election": 20
+        }
+    },
+    {
+        "model": "campaign_trail.state",
         "pk": 398,
         "fields": {
             "name": "New Jersey",
