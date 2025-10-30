@@ -1,3 +1,6 @@
+
+
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -266,6 +269,69 @@ campaignTrail_temp.questions_json = [
         "fields": {
             "priority": 0,
             "description": "Are there any states you want to visit before Election Day? ",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15124,
+        "fields": {
+            "priority": 0,
+            "description": "Mr. Clinton, you have broken your promise to make a peace deal with Great Britain. New England is pissed, while the South and Midwest applaud you. What made you change your mind?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15125,
+        "fields": {
+            "priority": 0,
+            "description": "(December 26th 1813) Mr. Clinton, even though you broke your promise on ending the war with a peace deal, things have been looking promising thus far. With major victories such as the Battle of Lake Erie and the Battle of the Thames. How will you address the great news?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15126,
+        "fields": {
+            "priority": 0,
+            "description": " (August 14th 1814) Mr. Clinton! Bloody wake up! The damn redcoats did it. The Executive Mansion is burning down! We need to move! ",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15127,
+        "fields": {
+            "priority": 0,
+            "description": "Mr. Clinton, we got everyone out. However, those damn redcoats got away! What shall we do? ",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15128,
+        "fields": {
+            "priority": 0,
+            "description": "(December 1814) Mr. Clinton, we have just received news that the House and Senate are staying Northern Democratic Republican! And, the Battle in Ontario and Quebec has ended in a draw. Both sides are getting weaker. What shall you do?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15129,
+        "fields": {
+            "priority": 0,
+            "description": "(November 1816) Well, as the election is days away, Great Britain has offered peace to both sides. They explained that their military is weak and tired and that yours are probably too. What shall you do?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15228,
+        "fields": {
+            "priority": 0,
+            "description": "Player, you thought you could self-sabotage and I wouldn’t notice? Well, because of your sins, I changed your VP. So now your new VP is the 42nd President of the United States: Bill Clinton. May I remind you, Bill is not even an embryo and would not be born for 130 years. So now you think to yourself, Is my campaign screwed? Yes, dear player, your campaign is screwed indeed. So I will give you two options. Either continue this path and lose badly. Or, you can play again and not be an idiot. You choose. ",
             "likelihood": 1
         }
     }
@@ -943,6 +1009,182 @@ campaignTrail_temp.answers_json = [
             "question": 636,
             "description": "Sir Robert Jenkinson. I offer a peace deal and a ceasefire. Both of our soldiers are dying out there, and it is up to us not to make the number of deceased individuals rise. "
         }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15130,
+        "fields": {
+            "question": 15124,
+            "description": "The tyrants of Great Britain have messed with our people for 40 years. We shall not let them continue their scheme. \n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15132,
+        "fields": {
+            "question": 15124,
+            "description": "If I were to continue with the peace deal, the \tBrits would most certainly promote their trickery. They shall not be trusted.\n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15133,
+        "fields": {
+            "question": 15124,
+            "description": "Simple. The United States is a free world where you make your own choices; a monarch will not choose how you live, eat, and sleep. And if we want to ensure that, we need to destroy the tyrants of Britain. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15134,
+        "fields": {
+            "question": 15124,
+            "description": " If we continue with a peace deal, Great Britain would have the upper hand when taking Canada. They won’t tell you, they might even be teaming with the Spanish Monarchs. Tyrants shall not corner us. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15138,
+        "fields": {
+            "question": 15125,
+            "description": "This is wonderful; however, we shall not lose our main focus on our main objective. Winning the war. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15139,
+        "fields": {
+            "question": 15125,
+            "description": "We need to ensure our troops are ready for action whenever the next battle takes place. We do not want to fall after our successes. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15140,
+        "fields": {
+            "question": 15125,
+            "description": "Let’s celebrate this achievement with our supporters!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15205,
+        "fields": {
+            "question": 15126,
+            "description": "Ok, I am coming! Let’s hurry! "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15206,
+        "fields": {
+            "question": 15126,
+            "description": "Wait! I need to grab the Portrait of George Washington and some documents! "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15207,
+        "fields": {
+            "question": 15126,
+            "description": "Wait! We need to get the portraits of my predecessors and some important documents! "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15208,
+        "fields": {
+            "question": 15126,
+            "description": "Wait! We need to get everyone out! Where is Mr. Ingersoll? He’s outside? That’s a relief! We need to rescue everyone!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15213,
+        "fields": {
+            "question": 15127,
+            "description": "They think they can get away with this?! Gather a militia. We are killing that tyrannical bastard! King George III is dead. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15214,
+        "fields": {
+            "question": 15127,
+            "description": "We need to be a step ahead of them. They could not have gotten far. Get troops to surround the D.C. Area, including Virginia and Maryland, to ensure they do not escape."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15215,
+        "fields": {
+            "question": 15127,
+            "description": "This is an act of terrorism! We shall be on full alert. We need to sabotage their economy. Let’s send some spies to Great Britain and pray to God this plan works!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15216,
+        "fields": {
+            "question": 15127,
+            "description": "Let's leave some troops to remain in D.C. just in case they come back for a second massacre. I will go back to New York and make my property the temporary Executive Mansion. While I do that, let’s send some troops to Quebec and Ontario. Maybe we can capture those cities and force Great Britain to surrender."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15221,
+        "fields": {
+            "question": 15128,
+            "description": "End the War!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15222,
+        "fields": {
+            "question": 15128,
+            "description": "Continue the war!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15223,
+        "fields": {
+            "question": 15129,
+            "description": "I agree, let’s end the war for good!\n"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15224,
+        "fields": {
+            "question": 15129,
+            "description": "Never! They burned our capital city!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15225,
+        "fields": {
+            "question": 15129,
+            "description": "I agree, but we need some type of limit to add to the peace deal. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15229,
+        "fields": {
+            "question": 15228,
+            "description": "I will restart, sorry, Penguin dude. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15230,
+        "fields": {
+            "question": 15228,
+            "description": "Nah! I wanna lose more. "
+        }
     }
 ]
 
@@ -1057,7 +1299,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Massachusetts",
             "abbr": "MA",
-            "electoral_votes": 15,
+            "electoral_votes": 22,
             "popular_votes": 38384,
             "poll_closing_time": 90,
             "winner_take_all_flg": 1,
@@ -3581,6 +3823,46 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 131,
             "affected_candidate": 131,
             "global_multiplier": -0.002
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15202,
+        "fields": {
+            "answer": 15138,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15203,
+        "fields": {
+            "answer": 15139,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15204,
+        "fields": {
+            "answer": 15140,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15227,
+        "fields": {
+            "answer": 15224,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": -0.1
         }
     }
 ]
@@ -6414,6 +6696,270 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 131,
             "state_multiplier": -100000
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15164,
+        "fields": {
+            "answer": 15130,
+            "state": 392,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15165,
+        "fields": {
+            "answer": 15130,
+            "state": 393,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15166,
+        "fields": {
+            "answer": 15130,
+            "state": 397,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15167,
+        "fields": {
+            "answer": 15130,
+            "state": 398,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15169,
+        "fields": {
+            "answer": 15130,
+            "state": 402,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15170,
+        "fields": {
+            "answer": 15130,
+            "state": 403,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15174,
+        "fields": {
+            "answer": 15132,
+            "state": 392,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15175,
+        "fields": {
+            "answer": 15132,
+            "state": 393,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15176,
+        "fields": {
+            "answer": 15132,
+            "state": 397,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15177,
+        "fields": {
+            "answer": 15132,
+            "state": 398,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15179,
+        "fields": {
+            "answer": 15132,
+            "state": 402,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15180,
+        "fields": {
+            "answer": 15132,
+            "state": 403,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15184,
+        "fields": {
+            "answer": 15133,
+            "state": 392,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15185,
+        "fields": {
+            "answer": 15133,
+            "state": 393,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15186,
+        "fields": {
+            "answer": 15133,
+            "state": 397,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15187,
+        "fields": {
+            "answer": 15133,
+            "state": 398,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15189,
+        "fields": {
+            "answer": 15133,
+            "state": 402,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15190,
+        "fields": {
+            "answer": 15133,
+            "state": 403,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15194,
+        "fields": {
+            "answer": 15134,
+            "state": 392,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15195,
+        "fields": {
+            "answer": 15134,
+            "state": 393,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15196,
+        "fields": {
+            "answer": 15134,
+            "state": 397,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15197,
+        "fields": {
+            "answer": 15134,
+            "state": 398,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15199,
+        "fields": {
+            "answer": 15134,
+            "state": 402,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15200,
+        "fields": {
+            "answer": 15134,
+            "state": 403,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": -0.05
+        }
     }
 ]
 
@@ -7128,6 +7674,123 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 131,
             "answer_feedback": "Jenkinson gathers his parliament to think. They will spend all night thinking of an answer, and they will let you know tomorrow at dawn. "
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15131,
+        "fields": {
+            "answer": 15130,
+            "candidate": 131,
+            "answer_feedback": "This defeats the whole purpose of you getting elected in 1812..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15135,
+        "fields": {
+            "answer": 15132,
+            "candidate": 131,
+            "answer_feedback": "This defeats the whole purpose of you getting elected in 1812..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15136,
+        "fields": {
+            "answer": 15133,
+            "candidate": 131,
+            "answer_feedback": "This defeats the whole purpose of you getting elected in 1812..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15137,
+        "fields": {
+            "answer": 15134,
+            "candidate": 131,
+            "answer_feedback": "This defeats the whole purpose of you getting elected in 1812..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15209,
+        "fields": {
+            "answer": 15207,
+            "candidate": 131,
+            "answer_feedback": "Here lies President DeWitt Clinton, who sacrificed his life to save a painting. \nMarch 2nd, 1769 - August 14th 1814"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15210,
+        "fields": {
+            "answer": 15205,
+            "candidate": 131,
+            "answer_feedback": "You escape the mansion with little to no injuries. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15211,
+        "fields": {
+            "answer": 15206,
+            "candidate": 131,
+            "answer_feedback": "You barely escape, and you are met with a full crowd of people applauding you for your bravery, while your staff thinks of you as a fool. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15212,
+        "fields": {
+            "answer": 15208,
+            "candidate": 131,
+            "answer_feedback": "Everyone is able to make it out of the mansion alive! "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15217,
+        "fields": {
+            "answer": 15213,
+            "candidate": 131,
+            "answer_feedback": "Mr. President, King George has been poisoned. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15218,
+        "fields": {
+            "answer": 15214,
+            "candidate": 131,
+            "answer_feedback": "Mr. President, we got them. We will be planning their execution. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15219,
+        "fields": {
+            "answer": 15215,
+            "candidate": 131,
+            "answer_feedback": "Mr. President, they caught us! Send backup!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15220,
+        "fields": {
+            "answer": 15216,
+            "candidate": 131,
+            "answer_feedback": "Roger that, Mr. President. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15226,
+        "fields": {
+            "answer": 15224,
+            "candidate": 131,
+            "answer_feedback": "Congress is tired of war. So they secretly announce peace. Now opponents call you Dehawk Clinton. "
+        }
     }
 ]
 
@@ -7145,11 +7808,25 @@ campaignTrail_temp.jet_data = [{
     },
     "mapping_enabled": false,
     "mapping_data": {},
-    "cyoa_enabled": false,
+    "cyoa_enabled": true,
     "cyoa_data": {},
     "cyoa_variables": {},
     "cyoa_variable_effects": {},
-    "cyoa_answer_swaps": {},
+    "cyoa_answer_swaps": {
+        "1761784422024": {
+            "id": 1761784422024,
+            "triggers": [],
+            "conditions": [],
+            "conditionOperator": "AND",
+            "swaps": [
+                {
+                    "pk1": null,
+                    "pk2": null,
+                    "takeEffects": true
+                }
+            ]
+        }
+    },
     "banner_data": {
         "canName": "Clinton",
         "canImage": "https://i.imgur.com/qPeWWbY.png",
@@ -7191,4 +7868,3 @@ document.head.appendChild(style_overwrite);
                     	VT: "M 844.484 154.058 L 844.801 148.712 L 841.91 137.928 L 841.264 137.605 L 838.354 136.312 L 839.162 133.402 L 838.354 131.3 L 835.654 126.66 L 836.624 122.78 L 835.815 117.607 L 833.39 111.141 L 832.585 106.218 L 859.004 99.486 L 859.313 105.008 L 861.229 107.751 L 861.229 111.792 L 857.522 116.85 L 854.935 117.993 L 854.924 119.113 L 856.234 120.633 L 855.923 128.731 L 855.314 137.989 L 855.086 143.546 L 856.056 144.84 L 855.894 149.41 L 855.409 151.1 L 856.423 151.827 L 848.986 153.334 L 844.484 154.058 Z",
                     	VA: "M 703.869 316.459 L 713.918 310.992 L 713.945 308.878 L 715.625 306.512 L 725.984 295.357 L 725.696 294.851 L 723.531 293.631 L 721.854 290.048 L 717.593 286.507 L 716.91 284.275 L 714.345 282.812 L 713.475 281.169 L 713.26 276.301 L 713.183 275.904 L 715.265 275.915 L 717.31 275.001 L 717.512 272.346 L 719.133 270.863 L 719.313 265.737 L 720.277 262.007 L 721.55 261.329 L 722.86 262.401 L 723.42 264.265 L 725.098 263.208 L 725.62 261.572 L 724.491 259.902 L 724.534 257.431 L 727.732 252.701 L 728.989 251.36 L 731.044 251.75 L 733.464 250.074 L 736.498 246.842 L 738.702 242.871 L 739.221 235.289 L 739.486 231.925 L 739.556 227.582 L 738.443 224.521 L 739.122 223.171 L 740.621 221.753 L 741.542 226.466 L 744.189 241.556 L 761.115 238.946 L 761.272 239.291 L 763.282 249.141 L 763.345 249.914 L 767.432 244.814 L 767.918 244.211 L 770.348 243.672 L 771.835 242.153 L 773.548 239.648 L 775.082 240.251 L 777.916 239.897 L 782.471 236.313 L 784.398 235.89 L 785.576 236.866 L 789.224 238.755 L 792.664 241.845 L 792.947 242.376 L 796.067 243.531 L 796.213 246.65 L 801.829 247.824 L 803.936 248.946 L 805.624 251.068 L 805.058 254.641 L 803.093 257.292 L 803.183 259.28 L 803.857 261.242 L 808.63 262.413 L 813.218 262.562 L 816.349 263.503 L 818.281 263.793 L 819.073 266.975 L 822.147 267.293 L 822.991 268.504 L 822.639 273.064 L 824.019 274.287 L 823.491 276.221 L 824.706 276.942 L 824.451 278.425 L 821.724 278.305 L 821.835 279.874 L 824.118 281.435 L 824.151 282.862 L 826.056 284.643 L 826.528 287.13 L 824.044 288.495 L 825.747 290.131 L 831.228 288.302 L 835 294.363 L 776.974 307.029 L 744.227 311.455 L 739.55 312.199 L 732.669 311.861 L 730.086 313.786 L 722.893 313.994 L 703.869 316.459 Z M 831.639 266.069 L 831.495 264.122 L 837.948 261.572 L 837.178 264.79 L 834.258 268.569 L 833.84 273.155 L 834.302 276.545 L 832.474 281.523 L 830.309 283.44 L 828.839 278.799 L 829.285 273.35 L 830.872 269.167 L 831.639 266.069 Z",
 };var i={};for(var s in r){i={};if(this.options.stateSpecificStyles[s]){e.extend(i,t,this.options.stateSpecificStyles[s])}else{i=t}this.stateShapes[s]=n.path(r[s]).attr(i);this.topShape=this.stateShapes[s];this.stateHitAreas[s]=n.path(r[s]).attr({fill:"#000","stroke-width":0,opacity:0,cursor:"pointer"});this.stateHitAreas[s].node.dataState=s}this._onClickProxy=e.proxy(this,"_onClick");this._onMouseOverProxy=e.proxy(this,"_onMouseOver"),this._onMouseOutProxy=e.proxy(this,"_onMouseOut");for(var s in this.stateHitAreas){this.stateHitAreas[s].toFront();e(this.stateHitAreas[s].node).bind("mouseout",this._onMouseOutProxy);e(this.stateHitAreas[s].node).bind("click",this._onClickProxy);e(this.stateHitAreas[s].node).bind("mouseover",this._onMouseOverProxy)}},_initCreateLabels:function(){var t=this.paper;var n=["VT","NH","MA","RI","CT","NJ","DE","MD"];var r=860;var i=220;var s=this.options.labelWidth;var o=this.options.labelHeight;var u=this.options.labelGap;var a=this.options.labelRadius;var f=s/this.scale;var l=o/this.scale;var c=(s+u)/this.scale;var h=(o+u)/this.scale*.5;var p=a/this.scale;var d=this.options.labelBackingStyles;var v=this.options.labelTextStyles;var m={};for(var g=0,y,b,w;g<n.length;++g){w=n[g];y=(g+1)%2*c+r;b=g*h+i;m={};if(this.options.stateSpecificLabelBackingStyles[w]){e.extend(m,d,this.options.stateSpecificLabelBackingStyles[w])}else{m=d}this.labelShapes[w]=t.rect(y,b,f,l,p).attr(m);m={};if(this.options.stateSpecificLabelTextStyles[w]){e.extend(m,v,this.options.stateSpecificLabelTextStyles[w])}else{e.extend(m,v)}if(m["font-size"]){m["font-size"]=parseInt(m["font-size"])/this.scale+"px"}this.labelTexts[w]=t.text(y+f/2,b+l/2,w).attr(m);this.labelHitAreas[w]=t.rect(y,b,f,l,p).attr({fill:"#000","stroke-width":0,opacity:0,cursor:"pointer"});this.labelHitAreas[w].node.dataState=w}for(var w in this.labelHitAreas){this.labelHitAreas[w].toFront();e(this.labelHitAreas[w].node).bind("mouseout",this._onMouseOutProxy);e(this.labelHitAreas[w].node).bind("click",this._onClickProxy);e(this.labelHitAreas[w].node).bind("mouseover",this._onMouseOverProxy)}},_getStateFromEvent:function(e){var t=e.target&&e.target.dataState||e.dataState;return this._getState(t)},_getState:function(e){var t=this.stateShapes[e];var n=this.stateHitAreas[e];var r=this.labelShapes[e];var i=this.labelTexts[e];var s=this.labelHitAreas[e];return{shape:t,hitArea:n,name:e,labelBacking:r,labelText:i,labelHitArea:s}},_onMouseOut:function(e){var t=this._getStateFromEvent(e);if(!t.hitArea){return}return!this._triggerEvent("mouseout",e,t)},_defaultMouseOutAction:function(t){var n={};if(this.options.stateSpecificStyles[t.name]){e.extend(n,this.options.stateStyles,this.options.stateSpecificStyles[t.name])}else{n=this.options.stateStyles}t.shape.animate(n,this.options.stateHoverAnimation);if(t.labelBacking){var n={};if(this.options.stateSpecificLabelBackingStyles[t.name]){e.extend(n,this.options.labelBackingStyles,this.options.stateSpecificLabelBackingStyles[t.name])}else{n=this.options.labelBackingStyles}t.labelBacking.animate(n,this.options.stateHoverAnimation)}},_onClick:function(e){var t=this._getStateFromEvent(e);if(!t.hitArea){return}return!this._triggerEvent("click",e,t)},_onMouseOver:function(e){var t=this._getStateFromEvent(e);if(!t.hitArea){return}return!this._triggerEvent("mouseover",e,t)},_defaultMouseOverAction:function(t){this.bringShapeToFront(t.shape);this.paper.safari();var n={};if(this.options.stateSpecificHoverStyles[t.name]){e.extend(n,this.options.stateHoverStyles,this.options.stateSpecificHoverStyles[t.name])}else{n=this.options.stateHoverStyles}t.shape.animate(n,this.options.stateHoverAnimation);if(t.labelBacking){var n={};if(this.options.stateSpecificLabelBackingHoverStyles[t.name]){e.extend(n,this.options.labelBackingHoverStyles,this.options.stateSpecificLabelBackingHoverStyles[t.name])}else{n=this.options.labelBackingHoverStyles}t.labelBacking.animate(n,this.options.stateHoverAnimation)}},_triggerEvent:function(t,n,r){var i=r.name;var s=false;var o=e.Event("usmap"+t+i);o.originalEvent=n;if(this.options[t+"State"][i]){s=this.options[t+"State"][i](o,r)===false}if(o.isPropagationStopped()){this.element.trigger(o,[r]);s=s||o.isDefaultPrevented()}if(!o.isPropagationStopped()){var u=e.Event("usmap"+t);u.originalEvent=n;if(this.options[t]){s=this.options[t](u,r)===false||s}if(!u.isPropagationStopped()){this.element.trigger(u,[r]);s=s||u.isDefaultPrevented()}}if(!s){switch(t){case"mouseover":this._defaultMouseOverAction(r);break;case"mouseout":this._defaultMouseOutAction(r);break}}return!s},trigger:function(e,t,n){t=t.replace("usmap","");e=e.toUpperCase();var r=this._getState(e);this._triggerEvent(t,n,r)},bringShapeToFront:function(e){if(this.topShape){e.insertAfter(this.topShape)}this.topShape=e}};var c=[];s(e,"usmap",l,c)})(jQuery,document,window,Raphael)
-
