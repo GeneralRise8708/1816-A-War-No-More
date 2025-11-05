@@ -1,6 +1,9 @@
 // coded by themccain
 // written by generalrise
 
+var SelfSabotage = 0;
+
+
 e.cyoa = true;
 
 function getQuestionNumberFromPk(pk) {
@@ -13,13 +16,31 @@ function getQuestionNumberFromPk(pk) {
 
 cyoAdventure = function (a) {
     ans = e.player_answers[campaignTrail_temp.player_answers.length-1];
-        e.noCounter += 1;
+    e.noCounter += 1;
 
 if (ans == 14557) {
 e.questions_json[5] = tunnel(15124);
-  }
+ SelfSabotage  += 1; // counts how many odd answers you pick
+ }
+
+if (ans == 14746) {
+SelfSabotage  += 1; 
 }
 
+
+if (SelfSabotage == 2) {
+e.questions_json[14] = tunnel(15243);
+ }
+
+if (ans == 15250) {
+e.questions_json[15] = tunnel(15228);
+e.questions_json[16] = tunnel(15233);
+campaignTrail_temp.running_mate_last_name = 'Clinton';
+campaignTrail_temp.running_mate_first_name = 'Bill';
+campaignTrail_temp.running_mate_image_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/220px-Bill_Clinton.jpg';
+ }
+
+}
 
 campaignTrail_temp.questions_json = [
     {
@@ -351,7 +372,25 @@ campaignTrail_temp.questions_json = [
         "pk": 15228,
         "fields": {
             "priority": 0,
-            "description": "Player, you thought you could self-sabotage and I wouldn’t notice? Well, because of your sins, I changed your VP. So now your new VP is the 42nd President of the United States: Bill Clinton. May I remind you, Bill is not even an embryo and would not be born for 130 years. So now you think to yourself, Is my campaign screwed? Yes, dear player, your campaign is screwed indeed. So I will give you two options. Either continue this path and lose badly. Or, you can play again and not be an idiot. You choose. ",
+            "description": "In an astounding choice, you have defied the convention and decided to nominate Bill Clinton as your running mate. Bill Clinton is currently -130 years old, How will you announce this?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15233,
+        "fields": {
+            "priority": 0,
+            "description": "Again, it can't be understated how much of a confusing choice it was to choose Bill Clinton as your running mate. The Federalist Party is furious. Stop the bleeding.",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 15243,
+        "fields": {
+            "priority": 1,
+            "description": "(March 16th 1816) Mr. Clinton, today, your Vice President, Jared Ingersoll, has been renominated as your Running Mate. How will you react?",
             "likelihood": 1
         }
     }
@@ -1192,18 +1231,58 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 15229,
+        "pk": 15230,
         "fields": {
             "question": 15228,
-            "description": "I will restart, sorry, Penguin dude. "
+            "description": "It was my honor to work with Vice President Ingersoll for these past 3 years. That's why I'm announcing Bill Clinton, an embryo of great wisdom and experience, will be replacing him. I wish Ingersoll the best in retirement."
         }
     },
     {
         "model": "campaign_trail.answer",
-        "pk": 15230,
+        "pk": 15234,
         "fields": {
-            "question": 15228,
-            "description": "Nah! I wanna lose more. "
+            "question": 15233,
+            "description": "These people can go to hell for all I care. Bill Clinton is a great choice. Those who say otherwise are wrong."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15236,
+        "fields": {
+            "question": 15233,
+            "description": "I will give a speech to the Convention about why Clinton is the best choice for my running mate."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15237,
+        "fields": {
+            "question": 15233,
+            "description": "It was because I self-sabotaged, right? Perhaps I should restart, and try again..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15238,
+        "fields": {
+            "question": 15233,
+            "description": "..."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15244,
+        "fields": {
+            "question": 15243,
+            "description": "Ingersoll has been a strong help for the last four years, and I am grateful to have him again for hopefully another 4 years. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 15250,
+        "fields": {
+            "question": 15243,
+            "description": "I have thought about it long and hard. I want a vice president who is young like me. We need young leaders. "
         }
     }
 ]
@@ -3883,6 +3962,26 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 131,
             "affected_candidate": 131,
             "global_multiplier": -0.1
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15232,
+        "fields": {
+            "answer": 15230,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": -0.6
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 15246,
+        "fields": {
+            "answer": 15244,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "global_multiplier": 0.005
         }
     }
 ]
@@ -6980,6 +7079,39 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 131,
             "state_multiplier": -0.05
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15247,
+        "fields": {
+            "answer": 15244,
+            "state": 402,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15248,
+        "fields": {
+            "answer": 15244,
+            "state": 401,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 15249,
+        "fields": {
+            "answer": 15244,
+            "state": 392,
+            "candidate": 131,
+            "affected_candidate": 131,
+            "state_multiplier": 0.01
+        }
     }
 ]
 
@@ -7566,7 +7698,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 15075,
             "candidate": 131,
-            "answer_feedback": "Well, I have this one guy in mind. Though he may NOT help. "
+            "answer_feedback": "Huh?"
         }
     },
     {
@@ -7811,6 +7943,69 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 131,
             "answer_feedback": "Congress is tired of war. So they secretly announce peace. Now opponents call you Dehawk Clinton. "
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15231,
+        "fields": {
+            "answer": 15230,
+            "candidate": 131,
+            "answer_feedback": "The convention is shocked."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15239,
+        "fields": {
+            "answer": 15236,
+            "candidate": 131,
+            "answer_feedback": "'...'<br><br>What an incredible speech!"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15240,
+        "fields": {
+            "answer": 15234,
+            "candidate": 131,
+            "answer_feedback": "bruh"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15241,
+        "fields": {
+            "answer": 15237,
+            "candidate": 131,
+            "answer_feedback": "Wise decision. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15242,
+        "fields": {
+            "answer": 15238,
+            "candidate": 131,
+            "answer_feedback": "DeWitt... are you alright?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15245,
+        "fields": {
+            "answer": 15244,
+            "candidate": 131,
+            "answer_feedback": "Ingersoll helped you win Pennsylvania back in 1812; you could win it again with him. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 15251,
+        "fields": {
+            "answer": 15250,
+            "candidate": 131,
+            "answer_feedback": "Well, I have this one guy in mind. Though he may NOT help. "
+        }
     }
 ]
 
@@ -7856,6 +8051,8 @@ campaignTrail_temp.jet_data = [{
     "banner_enabled": true
 }
 ]
+
+
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
