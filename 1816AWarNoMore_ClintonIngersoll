@@ -3,7 +3,6 @@
 
 var SelfSabotage = 0;
 
-
 e.cyoa = true;
 
 function getQuestionNumberFromPk(pk) {
