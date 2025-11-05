@@ -1249,7 +1249,7 @@ campaignTrail_temp.answers_json = [
         "pk": 15236,
         "fields": {
             "question": 15233,
-            "description": "I will give a speech to the Convention about why Clinton is the best choice for my running mate."
+            "description": "Clinton shall give a speech to the convention for why he is the best choice for my running mate."
         }
     },
     {
